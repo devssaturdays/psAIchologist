@@ -1,0 +1,30 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - speak
+  - bot_challenge
+
+actions:
+  - user_speak
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "I see. Do you want to tell me more about it?"
+
+  utter_goodbye:
+  - text: "Thank you for sharing that, hope that made you fell better!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
