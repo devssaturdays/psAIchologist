@@ -15,6 +15,11 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - Hi!
+    - Hola
+    - hola
+    - hello?
+    - Hi
 - intent: speak
   examples: |
     - My day was horrible
@@ -41,6 +46,26 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - My girlfriend dumped me
+    - Sad
+    - stress
+    - suicide
+    - i am feeling bad
+    - bad
+    - sadness
+    - work
+    - I feel terrible
+    - should I kill someone?
+    - stressed
+    - I feel bad
+    - poorly
+    - As I said my problems with anxiety
+    - Can you help me
+    - I really don't know what to do
+    - Pretty bad
+    - I'm having some troubles with anxiety and I suffer a lot when thinking about my future
+    - I'm not feeling well
+    - I have a problem
 - intent: goodbye
   examples: |
     - good afternoon
@@ -54,6 +79,8 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - kill you
+    - Bye
 - intent: affirm
   examples: |
     - yes
@@ -62,6 +89,9 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - sure
+    - ?
+    - Yes
 - intent: deny
   examples: |
     - no
@@ -70,6 +100,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - No
 - intent: mood_great
   examples: |
     - perfect
@@ -86,9 +117,12 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - fine, and you
 - intent: bot_challenge
   examples: |
     - Are you a bot?
+    - you're anoying
 - intent: Sad
   examples: |
     - Life is not going the way I expected
+    - She's a bitch

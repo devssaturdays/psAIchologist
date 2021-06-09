@@ -1,18 +1,19 @@
 version: "2.0"
-
 stories:
-
 - story: sad path 1
   steps:
   - intent: greet
   - action: utter_greet
   - intent: speak
   - action: utter_did_that_help
-  - intent: speak
-  - action: utter_did_that_help
   - intent: affirm
-  - action: utter_did_that_help
+  - action: utter_speak
   - intent: speak
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye 
+  - action: utter_speak_2
+  - intent: speak
+  - intent: affirm
+  - action: utter_speak
+  - intent: speak
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_see_you
