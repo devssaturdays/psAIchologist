@@ -21,25 +21,35 @@ intents:
     use_entities: true
 - Sad:
     use_entities: true
+- no_speak:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
   - text: Hey! How are you?
   utter_did_that_help:
-  - text: I see. Do you want to tell me more about it?
+  - text: I sad to hear that. Do you want to tell me more about it?
   utter_goodbye:
   - text: Thank you for sharing that, hope that made you fell better!
   utter_iamabot:
   - text: I am a bot, here whenever you need me.
   utter_speak:
-  - text: What brings you here today?
+  - text: Go for it, I'm all ears
   utter_speak_2:
   - text: And how does that makes you feel?
   utter_anything_more:
   - text: There's anything more?
   utter_see_you:
   - text: Bye. I'm here whenever you need!
+  utter_affirm_to_speak:
+  - text: Go for it, I'm here to support you on every need. Bye for now.
+  utter_no_speak:
+  - text: Great to hear that, I'm here whenever you need me.
+  utter_deny_to_speak:
+  - text: No problem, whenever you feel ready I'm here to help. Bye for now.
+  utter_theres_all:
+  - text: Hope that sharing that made you feel better. Bye for now.
 actions:
 - user_speak
 forms: {}

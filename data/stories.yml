@@ -1,6 +1,6 @@
 version: "2.0"
 stories:
-- story: sad path 1
+- story: sad path
   steps:
   - intent: greet
   - action: utter_greet
@@ -11,9 +11,44 @@ stories:
   - intent: speak
   - action: utter_speak_2
   - intent: speak
+  - action: utter_anything_more
   - intent: affirm
   - action: utter_speak
   - intent: speak
   - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_see_you
+- story: good path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: goodbye
+  - action: utter_see_you
+- story: deny to speak
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny_to_speak
+  - intent: goodbye
+  - action: utter_see_you
+- story: anything else
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_speak
+  - intent: speak
+  - action: utter_speak_2
+  - intent: speak
+  - action: utter_anything_more
+  - intent: deny
+  - action: utter_theres_all
   - intent: goodbye
   - action: utter_see_you

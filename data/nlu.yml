@@ -20,6 +20,7 @@ nlu:
     - hola
     - hello?
     - Hi
+    - HI
 - intent: speak
   examples: |
     - My day was horrible
@@ -66,6 +67,10 @@ nlu:
     - I'm having some troubles with anxiety and I suffer a lot when thinking about my future
     - I'm not feeling well
     - I have a problem
+    - Not feeling good
+    - My girlfriend left me
+    - Lost my job
+    - Not good
 - intent: goodbye
   examples: |
     - good afternoon
@@ -81,6 +86,7 @@ nlu:
     - see you later
     - kill you
     - Bye
+    - Goodbye
 - intent: affirm
   examples: |
     - yes
@@ -118,6 +124,11 @@ nlu:
     - so good
     - so perfect
     - fine, and you
+    - I'm feeling good
+    - I'm feeling fine
+    - I'm fine
+    - I'm good thanks
+    - I'm wonderful
 - intent: bot_challenge
   examples: |
     - Are you a bot?
