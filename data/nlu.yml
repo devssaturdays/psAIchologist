@@ -21,6 +21,20 @@ nlu:
     - hello?
     - Hi
     - HI
+    - Hello there
+    - Good evening
+    - Good day
+    - Hey there my dear friend
+    - Hey
+    - Hey there
+    - Hello!!!
+    - Hello
+    - Hey!
+    - Hello there bot
+    - Good morning
+    - He
+    - Hello!
+    - Hola!
 - intent: speak
   examples: |
     - My day was horrible
@@ -71,6 +85,35 @@ nlu:
     - My girlfriend left me
     - Lost my job
     - Not good
+    - Life is not going the way I expected
+    - She's a bitch
+    - I'm not good
+    - I'm really sad
+    - how can you help me?
+    - I'm sad
+    - i am depressed
+    - i am feeling bad today
+    - I have a bad day
+    - pretty bad, we were together 10 years
+    - my girlfriend left me
+    - Yeah. My girlfriend left me
+    - I’m not feeling good
+    - I lost my job
+    - Pretty bad I think
+    - I'm suffering from anxiety
+    - I'm feeling down
+    - Pretty bad, I guess
+    - I'm feel that my dream job isn't actually my dream
+    - I'm having some troubles slepping
+    - I am dealing with a personal matter, I am lacking motivation
+    - Hola me gustaría hablar para solucionar algunos problemas
+    - I am dealing with a personal matter, a lack of motivation
+    - not so good
+    - Bad. She is no longer in love with me
+    - Yes, my girlfriend dumped me
+    - I'm not fine
+    - She is no longer in love with me
+    - Yes, my girl dumped me
 - intent: goodbye
   examples: |
     - good afternoon
@@ -84,9 +127,22 @@ nlu:
     - see you around
     - bye bye
     - see you later
-    - kill you
     - Bye
     - Goodbye
+    - sayonara
+    - I did in fact. Thanks
+    - Great! Bye for now
+- intent: bot_challenge
+  examples: |
+    - kill you
+    - Are you a bot?
+    - you're anoying
+    - i love you
+    - kiss me
+    - who you are?
+    - what do you do?
+    - fuck off
+    - where are you?
 - intent: affirm
   examples: |
     - yes
@@ -98,6 +154,8 @@ nlu:
     - sure
     - ?
     - Yes
+    - Yeah
+    - sure!
 - intent: deny
   examples: |
     - no
@@ -123,17 +181,51 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-    - fine, and you
     - I'm feeling good
     - I'm feeling fine
     - I'm fine
     - I'm good thanks
     - I'm wonderful
-- intent: bot_challenge
+    - I'm great
+    - I'm feeling good, thank you for asking
+    - Great, thanks!
+- intent: good_and_you
   examples: |
-    - Are you a bot?
-    - you're anoying
-- intent: Sad
+    - fine, and you
+    - I'm fine. And you?
+    - how are you?
+    - fine, and you?
+    - I'm fine, you?
+    - I'm fine, u?
+    - Fine, u?
+    - I'm fine, and you?
+    - Fine, you?
+    - I'm feeling great! And you?
+    - I'm wonderful. What about you?
+    - I'm feeling great and you?
+    - I'm feeling wonderful what about you?
+    - Fine u?
+    - I'm fine u
+- intent: opinion
   examples: |
-    - Life is not going the way I expected
-    - She's a bitch
+    - what you think?
+- intent: bad_and_you
+  examples: |
+    - I'm not good. And you?
+    - Hey, how are you?
+    - I'm bad, and you?
+    - Not feeling well today, and you?
+    - Hi, how are you?
+    - I'm not good today, what about you?
+    - I'm feeling bad today, and you?
+- intent: advice
+  examples: |
+    - What do you think?
+    - What do you think about it?
+    - Could you give me some advice?
+    - What's your opinion?
+    - Yeah, I'm looking for some career advice, could you give me some advices?
+    - Yes, can you help me?
+- intent: no_speak
+  examples: |
+    - it is hard to speak about this topid

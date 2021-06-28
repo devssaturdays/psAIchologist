@@ -9,6 +9,24 @@ stories:
   - intent: affirm
   - action: utter_speak
   - intent: speak
+  - action: utter_anything_more
+  - intent: affirm
+  - action: utter_speak_2
+  - intent: speak
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_see_you
+- story: sad path user asks if bot is fine
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bad_and_you
+  - action: utter_bots_fine
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_speak
+  - intent: speak
   - action: utter_speak_2
   - intent: speak
   - action: utter_anything_more
@@ -26,10 +44,32 @@ stories:
   - action: utter_mood_great
   - intent: goodbye
   - action: utter_see_you
+- story: user asks if bot is fine in the good path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: good_and_you
+  - action: utter_bots_fine_user_fine
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: goodbye
+  - action: utter_see_you
 - story: deny to speak
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny_to_speak
+  - intent: goodbye
+  - action: utter_see_you
+- story: user asks if bot is fine in deny to speak
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bad_and_you
+  - action: utter_bots_fine
   - intent: speak
   - action: utter_did_that_help
   - intent: deny
@@ -52,3 +92,95 @@ stories:
   - action: utter_theres_all
   - intent: goodbye
   - action: utter_see_you
+- story: user asks if bot is fine in the anything else
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bad_and_you
+  - action: utter_bots_fine
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_speak
+  - intent: speak
+  - action: utter_speak_2
+  - intent: speak
+  - action: utter_anything_more
+  - intent: deny
+  - action: utter_theres_all
+  - intent: goodbye
+  - action: utter_see_you
+- story: Story from Conversation ID 6ea6a5356bbb41fb8c344afa342696bd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: good_and_you
+  - action: utter_bots_fine_user_fine
+- story: Story from Conversation ID e6465dea63fd4bed8b3cfc6c2f8669ac
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+- story: Story from Conversation ID 4e41a5e744ac460bbe5f4c263672a058
+  steps:
+  - intent: bad_and_you
+  - action: utter_bots_fine
+- story: Story from Conversation ID ff64598e97ff496c9f994af734a8bd2a
+  steps:
+  - intent: bad_and_you
+  - action: utter_bots_fine
+- story: Story from Conversation ID 8d10648cc2494091bddf1b27ed8e451f
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bad_and_you
+  - action: utter_bots_fine
+- story: Story from Conversation ID 0c07615e43f04d5db38a7ac1553ffabc
+  steps:
+  - intent: bad_and_you
+  - action: utter_bots_fine
+- story: Story from Conversation ID d87b95182e5b435c9ee24cd83a144f77
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: good_and_you
+  - action: utter_bots_fine_user_fine
+- story: Story from Conversation ID 4742d3537657443199afa4caf06e20a2
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: Story from Conversation ID be32583eeea3469fb50e99fd74391ee3
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: Story from Conversation ID e36d404147624b8f9f8a70f3739a4d1c
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: good_and_you
+  - action: utter_bots_fine_user_fine
+- story: Story from Conversation ID da7547ddef444759ac5f2596299f3289
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: restart
+  - action: action_restart
+  - intent: greet
+  - action: utter_greet
+  - intent: good_and_you
+  - action: utter_bots_fine_user_fine
+- story: Story from Conversation ID 063cbb62f5c7435a9f5d595b09522def
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: good_and_you
+  - action: utter_bots_fine_user_fine
+- story: Story from Conversation ID 1193939924204deaaab7427f715dc431
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bad_and_you
+  - action: utter_bots_fine

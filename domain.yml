@@ -5,6 +5,10 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- restart:
+    use_entities: true
+- advice:
+    use_entities: true
 - greet:
     use_entities: true
 - goodbye:
@@ -23,13 +27,19 @@ intents:
     use_entities: true
 - no_speak:
     use_entities: true
+- good_and_you:
+    use_entities: true
+- opinion:
+    use_entities: true
+- bad_and_you:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
   - text: Hey! How are you?
   utter_did_that_help:
-  - text: I sad to hear that. Do you want to tell me more about it?
+  - text: I'm sad to hear that. Do you want to tell me more about it?
   utter_goodbye:
   - text: Thank you for sharing that, hope that made you fell better!
   utter_iamabot:
@@ -50,7 +60,23 @@ responses:
   - text: No problem, whenever you feel ready I'm here to help. Bye for now.
   utter_theres_all:
   - text: Hope that sharing that made you feel better. Bye for now.
+  utter_mood_great:
+  - text: Great to hear that! I'm here whenever you need, bye for now.
+  utter_feel_better:
+  - text: I'm glad to hear that. I'm here whenever you need me.
+  utter_bots_fine:
+  - text: I'm feeling great. What brings you here today?
+  utter_bots_fine_user_fine:
+  - text: I'm feeling great! Thank you for asking. I'm here whenever you need me.
+  utter_bye:
+  - text: Bye
+  utter_no_advice:
+  - text: I'm sorry, but I feel that I shouldn't tell you what to do. Deep inside you know what's better for you.
+  utter_next_response:
+  - text: That must be hard. I know sometimes life doesn't go as planned but in the long run, everything is going to be alright.
 actions:
 - user_speak
+- utter_bye
+- utter_next_response
 forms: {}
 e2e_actions: []
