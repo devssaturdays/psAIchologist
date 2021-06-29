@@ -105,6 +105,8 @@ nlu:
     - And now its over
     - I loved her, we've been together for 10 years and now its over
     - We've been together for 10 years, and now it's over you know?
+    - Well my boss says that I not good enough
+    - Normally, I'm really good employe but lately my mind just wonders and I can't do my job. I'm super not motivated
 - intent: not_good
   examples: |
     - I'm not feeling good

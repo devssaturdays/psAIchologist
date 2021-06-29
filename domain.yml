@@ -89,10 +89,13 @@ responses:
   - text: I'm sad to hear that. What's causing you such feeling?
   utter_thanks:
   - text: You're welcome. I'm here whenever you need me. Bye for now
+  utter_difficult_situation:
+  - text: It's indeed a difficult situation... I don't know how to help you but in the long run you will see that this situation is only temporary
 actions:
 - user_speak
 - utter_bye
 - utter_next_response
 - utter_thanks
+- utter_difficult_situation
 forms: {}
 e2e_actions: []
