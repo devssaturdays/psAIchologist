@@ -9,6 +9,12 @@ intents:
     use_entities: true
 - advice:
     use_entities: true
+- speak_with_yes:
+    use_entities: true
+- not_good:
+    use_entities: true
+- Thanks:
+    use_entities: true
 - greet:
     use_entities: true
 - goodbye:
@@ -38,14 +44,15 @@ slots: {}
 responses:
   utter_greet:
   - text: Hey! How are you?
-  utter_did_that_help:
-  - text: I'm sad to hear that. Do you want to tell me more about it?
+  'utter_supportive_answer ':
+  - text: I'm sad to hear that.
+  - text: That must be really hard to deal with.
   utter_goodbye:
   - text: Thank you for sharing that, hope that made you fell better!
   utter_iamabot:
   - text: I am a bot, here whenever you need me.
   utter_speak:
-  - text: Go for it, I'm all ears
+  - text: I'm all ears
   utter_speak_2:
   - text: And how does that makes you feel?
   utter_anything_more:
@@ -74,9 +81,18 @@ responses:
   - text: I'm sorry, but I feel that I shouldn't tell you what to do. Deep inside you know what's better for you.
   utter_next_response:
   - text: That must be hard. I know sometimes life doesn't go as planned but in the long run, everything is going to be alright.
+  utter_did_that_help:
+  - text: It's a difficult situation.  Do you want to tell me more about it?
+  - text: It's really sad to hear that.  Do you want to tell me more about it?
+  - text: I'm really sorry for you. If you want you can put all that out there, I'm all ears.
+  utter_do_you_want_to_tell_me_more:
+  - text: I'm sad to hear that. What's causing you such feeling?
+  utter_thanks:
+  - text: You're welcome. I'm here whenever you need me. Bye for now
 actions:
 - user_speak
 - utter_bye
 - utter_next_response
+- utter_thanks
 forms: {}
 e2e_actions: []

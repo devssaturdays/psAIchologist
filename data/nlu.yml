@@ -41,7 +41,6 @@ nlu:
     - My day was bad
     - My week was horrible
     - Recently I'm feeling down
-    - I'm not feeling good
     - I need to talk
     - Can I talk?
     - I really need to talk
@@ -56,8 +55,6 @@ nlu:
     - sad
     - very sad
     - unhappy
-    - not good
-    - not very good
     - extremly sad
     - so saad
     - so sad
@@ -79,15 +76,11 @@ nlu:
     - I really don't know what to do
     - Pretty bad
     - I'm having some troubles with anxiety and I suffer a lot when thinking about my future
-    - I'm not feeling well
     - I have a problem
-    - Not feeling good
     - My girlfriend left me
     - Lost my job
-    - Not good
     - Life is not going the way I expected
     - She's a bitch
-    - I'm not good
     - I'm really sad
     - how can you help me?
     - I'm sad
@@ -97,7 +90,6 @@ nlu:
     - pretty bad, we were together 10 years
     - my girlfriend left me
     - Yeah. My girlfriend left me
-    - I’m not feeling good
     - I lost my job
     - Pretty bad I think
     - I'm suffering from anxiety
@@ -108,12 +100,24 @@ nlu:
     - I am dealing with a personal matter, I am lacking motivation
     - Hola me gustaría hablar para solucionar algunos problemas
     - I am dealing with a personal matter, a lack of motivation
-    - not so good
     - Bad. She is no longer in love with me
-    - Yes, my girlfriend dumped me
-    - I'm not fine
     - She is no longer in love with me
-    - Yes, my girl dumped me
+    - And now its over
+    - I loved her, we've been together for 10 years and now its over
+    - We've been together for 10 years, and now it's over you know?
+- intent: not_good
+  examples: |
+    - I'm not feeling good
+    - not good
+    - not very good
+    - I'm not feeling well
+    - Not feeling good
+    - Not good
+    - I'm not good
+    - I’m not feeling good
+    - not so good
+    - I'm not fine
+    - I'm not godd
 - intent: goodbye
   examples: |
     - good afternoon
@@ -156,6 +160,7 @@ nlu:
     - Yes
     - Yeah
     - sure!
+    - Yes. You must be right
 - intent: deny
   examples: |
     - no
@@ -218,6 +223,7 @@ nlu:
     - Hi, how are you?
     - I'm not good today, what about you?
     - I'm feeling bad today, and you?
+    - Not good, and you?
 - intent: advice
   examples: |
     - What do you think?
@@ -226,6 +232,21 @@ nlu:
     - What's your opinion?
     - Yeah, I'm looking for some career advice, could you give me some advices?
     - Yes, can you help me?
+    - I'm crying all day and I can't live my life without her. Can you help me?
 - intent: no_speak
   examples: |
     - it is hard to speak about this topid
+- intent: speak_with_yes
+  examples: |
+    - Yes, my girlfriend dumped me
+    - Yes, my girl dumped me
+    - Yes, my girlfried dumped me
+    - Yes, We've been 10 years together
+    - Yes. My girlfriend dumped me
+    - Yes, my girlfriend left me
+- intent: restart
+  examples: |
+    - \restart
+- intent: Thanks
+  examples: |
+    - Thanks
