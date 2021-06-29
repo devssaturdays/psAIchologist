@@ -114,6 +114,9 @@ nlu:
     - She says that she doesn't love me anymore. I super sad
     - Well, my girlfriend left me
     - Yes, we were together for 2 years and now it's over. It hurts you know?
+    - My boss is a jerk and I'm really into changing my job
+    - I've been working really hard and my boss doesn't recognize it
+    - Stress
 - intent: not_good
   examples: |
     - I'm not feeling good
@@ -247,6 +250,7 @@ nlu:
     - Yeah, I'm looking for some career advice, could you give me some advices?
     - Yes, can you help me?
     - I'm crying all day and I can't live my life without her. Can you help me?
+    - Yes, I really need to change. Can you help me?
 - intent: no_speak
   examples: |
     - it is hard to speak about this topid

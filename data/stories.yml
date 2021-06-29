@@ -153,13 +153,31 @@ stories:
   - action: utter_no_advice
   - intent: Thanks
   - action: utter_thanks
-- story: Story from Conversation ID 54eb881e275e4b81a7386d9b51c056f7
+- story: sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: not_good
+  - action: utter_do_you_want_to_tell_me_more
+  - intent: speak
+  - action: utter_speak
+  - intent: goodbye
+  - action: utter_goodbye
+- story: sad path yes to tell me more
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: not_good
+  - action: utter_do_you_want_to_tell_me_more
+  - intent: speak_with_yes
+  - action: utter_speak_2
+  - intent: goodbye
+  - action: utter_see_you
+- story: sad path user asks if bot is fine
   steps:
   - intent: bad_and_you
   - action: utter_bots_fine
   - intent: speak
-  - action: utter_did_that_help
-  - intent: speak
-  - action: utter_difficult_situation
-  - intent: restart
-  - action: action_restart
+  - action: utter_speak_2
+  - intent: goodbye
+  - intent: goodbye
