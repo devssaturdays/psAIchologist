@@ -113,6 +113,7 @@ nlu:
     - Last week I had a fight with a college but I was right. I was just honouring my duties
     - She says that she doesn't love me anymore. I super sad
     - Well, my girlfriend left me
+    - Yes, we were together for 2 years and now it's over. It hurts you know?
 - intent: not_good
   examples: |
     - I'm not feeling good
@@ -236,6 +237,7 @@ nlu:
     - Not good, and you?
     - Not good and you?
     - not good u?
+    - Not good u?
 - intent: advice
   examples: |
     - What do you think?

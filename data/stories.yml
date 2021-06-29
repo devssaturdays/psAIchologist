@@ -153,3 +153,13 @@ stories:
   - action: utter_no_advice
   - intent: Thanks
   - action: utter_thanks
+- story: Story from Conversation ID 54eb881e275e4b81a7386d9b51c056f7
+  steps:
+  - intent: bad_and_you
+  - action: utter_bots_fine
+  - intent: speak
+  - action: utter_did_that_help
+  - intent: speak
+  - action: utter_difficult_situation
+  - intent: restart
+  - action: action_restart
