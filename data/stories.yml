@@ -145,3 +145,11 @@ stories:
   - intent: speak
   - action: utter_did_that_help
   - intent: speak
+- story: Story from Conversation ID bb0d14d086b149418786066dc317a63d
+  steps:
+  - intent: bad_and_you
+  - action: utter_bots_fine
+  - intent: opinion
+  - action: utter_no_advice
+  - intent: Thanks
+  - action: utter_thanks

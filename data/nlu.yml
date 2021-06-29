@@ -107,6 +107,12 @@ nlu:
     - We've been together for 10 years, and now it's over you know?
     - Well my boss says that I not good enough
     - Normally, I'm really good employe but lately my mind just wonders and I can't do my job. I'm super not motivated
+    - It all started last week when I could not deliver one project at work. I'm afraid to lose my job
+    - I can't sleep
+    - Now I have 3 children and a wife. I don't know what to do
+    - Last week I had a fight with a college but I was right. I was just honouring my duties
+    - She says that she doesn't love me anymore. I super sad
+    - Well, my girlfriend left me
 - intent: not_good
   examples: |
     - I'm not feeling good
@@ -120,6 +126,7 @@ nlu:
     - not so good
     - I'm not fine
     - I'm not godd
+    - Not godd
 - intent: goodbye
   examples: |
     - good afternoon
@@ -216,6 +223,7 @@ nlu:
 - intent: opinion
   examples: |
     - what you think?
+    - I'm feeling down today and don't know how. Can you help me?
 - intent: bad_and_you
   examples: |
     - I'm not good. And you?
@@ -226,6 +234,8 @@ nlu:
     - I'm not good today, what about you?
     - I'm feeling bad today, and you?
     - Not good, and you?
+    - Not good and you?
+    - not good u?
 - intent: advice
   examples: |
     - What do you think?
@@ -252,3 +262,5 @@ nlu:
 - intent: Thanks
   examples: |
     - Thanks
+    - Yeah. you must be right
+    - Yes, you're right
