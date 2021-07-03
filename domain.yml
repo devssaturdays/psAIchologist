@@ -15,6 +15,8 @@ intents:
     use_entities: true
 - Thanks:
     use_entities: true
+- nlu_fallback:
+    use_entities: true
 - greet:
     use_entities: true
 - goodbye:
@@ -28,8 +30,6 @@ intents:
 - speak:
     use_entities: true
 - bot_challenge:
-    use_entities: true
-- Sad:
     use_entities: true
 - no_speak:
     use_entities: true
@@ -91,8 +91,9 @@ responses:
   - text: You're welcome. I'm here whenever you need me. Bye for now
   utter_difficult_situation:
   - text: It's indeed a difficult situation... I don't know how to help you but in the long run you will see that this situation is only temporary
+  utter_utter_dont_understand:
+  - text: I'm not sure what you mean. Could you rephrase it?
 actions:
-- user_speak
 - utter_bye
 - utter_next_response
 - utter_thanks

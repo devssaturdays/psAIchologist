@@ -4,3 +4,7 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: Ask the user to rephrase whenever the intent is not captured
+  steps:
+  - intent: nlu_fallback
+  - action: utter_dont_understand

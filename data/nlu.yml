@@ -117,6 +117,7 @@ nlu:
     - My boss is a jerk and I'm really into changing my job
     - I've been working really hard and my boss doesn't recognize it
     - Stress
+    - Anxiety
 - intent: not_good
   examples: |
     - I'm not feeling good
@@ -207,6 +208,7 @@ nlu:
     - I'm great
     - I'm feeling good, thank you for asking
     - Great, thanks!
+    - Im good thanks
 - intent: good_and_you
   examples: |
     - fine, and you
@@ -241,6 +243,8 @@ nlu:
     - Not good and you?
     - not good u?
     - Not good u?
+    - bad and you?
+    - Good you?
 - intent: advice
   examples: |
     - What do you think?
